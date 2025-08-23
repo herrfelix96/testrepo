@@ -1,15 +1,15 @@
 #include <stdio.h>
-void ft_sort_int_tab(int *tab, int size);
+void ft_rev_int_tab(int *tab, int size);
 
 int main(void)
 {
     int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
     int *ptr = array;
     int size = 20;
-    ft_sort_int_tab(ptr, size);
+    ft_rev_int_tab(ptr, size);
 }
 
-void ft_sort_int_tab(int *tab, int size)
+void ft_rev_int_tab(int *tab, int size)
 {
     int newArray[size];
     int i;
