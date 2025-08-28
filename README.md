@@ -1,2 +1,2 @@
 # testrepo
-just testing
+exercises for 42Piscine
