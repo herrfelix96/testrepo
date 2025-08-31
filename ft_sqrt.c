@@ -41,9 +41,10 @@ int	ft_sqrt(int nb)
 	u = 0;
 	i = 0;
 	ft_prime_factors(nb);
-	if (FACTORS[i] != FACTORS[i + 1] || nb <= 0)
+	if (nb == 1)
+		return (1);
+	if (FACTORS[i] != FACTORS[i + 1] || FACTORS[i] == 0 || nb <= 0)
 		return (0);
-
 	while (FACTORS[i] == FACTORS[i + 1] && FACTORS[i] != 0)
 	{
 		UNIQUE_FACTORS[u] = FACTORS[i];
@@ -80,7 +81,6 @@ void	ft_prime_factors(int nb)
 			FACTORS[c] = f;
 			c++;
 			nb = nb / f;
-			//printf("%i\n", f);
 			f = 1;
 		}
 		f++;
